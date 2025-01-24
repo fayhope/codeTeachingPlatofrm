@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizzPage</title>
+    <link rel="stylesheet" href="./stylesheets/yourQuizzes.css">
+    <script src="./scripts/questionPage.js"></script>
+</head>
+<body>
+<div>
+    <div class = "your-quizzes-page">
+        <div class = "files-header">
+            <h1>
+                Your Quizzes
+            </h1>
+        </div>
+        <div class = "quizzes">
+            <div class="box">
+                <a class="plus" onclick="openOptions()">+</a>
+            </div>
+            <div class="popup" id="popup">
+                <a class="close-btn" onclick="closePopup()">✖</a>
+                <h3>Select Options</h3>
+                <ul class="checkbox-list">
+                    <p>Search:</p>
+                    <input id="search-input" oninput="filterOptions()" placeholder="Search for topics..."/>
+                    <li><input type="checkbox" id="option1"><label for="option1">Defining Variables</label></li>
+                    <li><input type="checkbox" id="option2"><label for="option2">For Loops</label></li>
+                    <li><input type="checkbox" id="option3"><label for="option3">While Loops</label></li>
+                    <button>Save</button>
+                    <button onclick="startQuiz()">Start</button>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+
+<!-- TO DO
+ - Finish Start and nothing functions
+ - Maybe edit UI  -->

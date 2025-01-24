@@ -1,0 +1,261 @@
+if x > 10:
+    print("x is greater than 10")
+
+if x % 2 == 0:
+    print("x is even")
+else:
+    print("x is odd")
+
+if x > 0:
+    if x < 100:
+        print("x is a positive two-digit number")
+
+if x > 50 and y < 20:
+    print("x is greater than 50 and y is less than 20")
+
+if "apple" in fruits:
+    print("Apple is in the list of fruits")
+
+if len(text) > 10:
+    print("The text is longer than 10 characters")
+elif len(text) == 10:
+    print("The text is exactly 10 characters long")
+else:
+    print("The text is shorter than 10 characters")
+
+if a > b or c > d:
+    print("Either a is greater than b, or c is greater than d")
+
+if not is_active:
+    print("The system is not active")
+
+if age > 18 and (country == "USA" or country == "Canada"):
+    print("Eligible for the program")
+
+
+if x > 10:
+    while y < 5:
+        print("y is less than 5")
+        y += 1
+    print("Loop finished")
+
+if a > b:
+    for i in range(5):
+        if i % 2 == 0:
+            print(f"Even index: {i}")
+        else:
+            print(f"Odd index: {i}")
+
+if x < 0:
+    while x < 0:
+        x += 1
+        print(f"x is negative, now it's {x}")
+else:
+    print("x is non-negative")
+
+if name == "John" and age > 21:
+    while age < 30:
+        print(f"Age: {age}")
+        age += 1
+    print("Age reached 30")
+
+if not all(value > 10 for value in values):
+    print("Not all values are greater than 10")
+
+if x == 0:
+    while x < 10:
+        x += 2
+        print(f"x is now {x}")
+else:
+    print("x was not zero")
+
+if len(data) > 100:
+    while data:
+        item = data.pop()
+        print(f"Processing: {item}")
+else:
+    print("Data is too small to process")
+
+if len(my_list) > 10:
+    for item in my_list:
+        if item == "stop":
+            break
+        print(f"Item: {item}")
+    print("Loop finished")
+
+if x == 1:
+    for i in range(3):
+        if i == 2:
+            print("Reached index 2")
+        else:
+            print(f"Index {i}")
+
+
+if x > 10 and y < 5:
+    for i in range(10):
+        if i % 2 == 0:
+            print(f"Even: {i}")
+        else:
+            print(f"Odd: {i}")
+else:
+    while y < 10:
+        print(f"y is {y}")
+        y += 1
+
+if len(data) > 100 and sum(data) > 500:
+    while data:
+        value = data.pop()
+        if value < 10:
+            print(f"Processing value: {value}")
+        else:
+            print("Skipping large value")
+
+if a == 10:
+    for i in range(10, 20):
+        if i % 2 == 0:
+            print(f"Even number: {i}")
+else:
+    while a < 20:
+        print(f"a is {a}")
+        a += 2
+
+if x == 0 and y != 0:
+    while x < 5:
+        x += 1
+        print(f"x is now {x}")
+elif x == 0:
+    print("x is zero")
+else:
+    print("x is non-zero")
+
+if len(items) > 5:
+    for item in items:
+        if item == "end":
+            break
+        print(f"Item: {item}")
+else:
+    print("Not enough items")
+
+if number % 3 == 0 and number % 5 == 0:
+    print("FizzBuzz")
+else:
+    if number % 3 == 0:
+        print("Fizz")
+    elif number % 5 == 0:
+        print("Buzz")
+
+if x < 0:
+    while x < 0:
+        print(f"x is negative: {x}")
+        x += 1
+elif x == 0:
+    print("x is zero")
+else:
+    print("x is positive")
+
+if "apple" in fruits and "banana" not in fruits:
+    for fruit in fruits:
+        if fruit == "grape":
+            print("Found grape!")
+        print(f"Fruit: {fruit}")
+else:
+    print("The fruit list contains either apple or banana")
+
+if user_input == "exit":
+    while True:
+        response = input("Are you sure you want to exit? (yes/no): ")
+        if response == "yes":
+            print("Exiting...")
+            break
+        elif response == "no":
+            print("Continuing...")
+            break
+        else:
+            print("Invalid response")
+else:
+    print("Input was not 'exit'")
+
+
+while x < 10:
+    print(f"x is {x}")
+    x += 1
+
+while y > 0:
+    print(f"y is {y}")
+    y -= 2
+else:
+    print("y has reached 0")
+
+while a < 100:
+    if a % 2 == 0:
+        print(f"a is even: {a}")
+    else:
+        print(f"a is odd: {a}")
+    a += 1
+
+while not finished:
+    user_input = input("Type 'exit' to finish: ")
+    if user_input == "exit":
+        finished = True
+        print("Exiting loop...")
+    else:
+        print("Continuing...")
+
+while n > 0:
+    if n % 2 == 0:
+        print(f"{n} is even")
+    else:
+        print(f"{n} is odd")
+    n -= 1
+
+while x < 100:
+    if x == 50:
+        print("Halfway there!")
+        break
+    x += 5
+
+while condition:
+    print("Running...")
+    if some_other_condition:
+        break
+    else:
+        continue
+
+while attempts < 3:
+    password = input("Enter password: ")
+    if password == "correct":
+        print("Access granted")
+        break
+    else:
+        print("Incorrect password")
+    attempts += 1
+else:
+    print("Access denied after 3 attempts")
+
+while True:
+    action = input("Enter action (type 'quit' to stop): ")
+    if action == "quit":
+        print("Exiting loop.")
+        break
+    elif action == "start":
+        print("Starting process...")
+    else:
+        print("Invalid action")
+
+while x < 20:
+    if x == 10:
+        print("Reached midpoint")
+    elif x > 15:
+        print("Close to the end")
+    x += 2
+
+while value:
+    print(f"Processing value: {value}")
+    value = value.next()
+
+while x > 0:
+    if x % 5 == 0:
+        print(f"x is divisible by 5: {x}")
+    elif x % 3 == 0:
+        print(f"x is divisible by 3: {x}")
+    x -= 1
